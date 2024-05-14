@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+    <script src="https://kit.fontawesome.com/28796e289d.js" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+    <title>E-Commerce site</title>
+</head>
+<body>
+    <div class="backgoung-img">
+        <div class="header">
+            <h1>LOGIN</h1>
+            <form>
+                <div class="butt-f">
+                    <button  onclick="document.getElementById('namef').style.display='block'" type="button"  id="signup-b">SignUp</button>
+                    <button  onclick="document.getElementById('namef').style.display='none'" type="button" class="dis" id="signin-b" >SignIn</button>
+                </div>
+            <div class="inside">
+                <div class="inside1" id="namef" style="display: none">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" name="Username" placeholder="UserName" required>
+                </div>
+                <div class="inside1">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="inside1">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <p>Forgot password then <a href="#">Click Here!</a></p>
+            </div>
+            </form>
+        </div>
+    </div>
+<!-- <script>
+    let signin=document.getElementById("signin-b");
+let signup=document.getElementById("signup-b");
+let nemef=document.getElementById("namef");
+signup.onclick=function displayName(){
+    // namef.style.maxHeight="20px";
+    signup.classList.add("dis");
+    signinp.classList.remove("dis");
+
+}
+</script> -->
+</body>
+</html>
